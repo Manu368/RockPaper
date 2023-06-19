@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  font-family: "Poppins";
+}
+.bg-container01{
+    background-color: #2d2a3d;
+    background-size: cover;
+    height: 100vh;
+}
+
+.message {
+  
+  text-align: center;
+  color: #fff;
+}
+.images {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  height: 200px;
+}
+.computer img,
+.player img {
+  width: 75%;
+}
+.shakeComputer {
+  animation: shakeComputer 0.8s linear;
+}
+.shakePlayer {
+  animation: shakePlayer 0.8s linear;
+}
+.points {
+  margin: 2em 0;
+  text-align: center;
+  color: #fff;
+}
+.computerPoints {
+  color: #fff;
+  margin-left: 5px;
+}
+.playerPoints {
+  color: #fff;
+  margin-right: 5px;
+}
+
+.options button {
+  background: none;
+  color: #fff;
+  font-family: "Poppins";
+  border: 1px solid #fff;
+  padding:10px;
+  border-radius: 7px;
+  width: 100px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: 0.2s all linear;
+  text-align: center;
+  text-transform: uppercase;
+}
+.options button:hover {
+  background-color: darkcyan;
+  border: 1px solid darkcyan;
+}
+@keyframes shakeComputer {
+  0% {
+    transform: rotate(-30deg);
+  }
+  25% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  75% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes shakePlayer {
+  0% {
+    transform: rotate(30deg);
+  }
+  25% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  75% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
